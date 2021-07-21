@@ -1,0 +1,20 @@
+package com.zale.mall.ware.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.zale.common.utils.PageUtils;
+import com.zale.mall.ware.entity.PurchaseDetailEntity;
+
+import java.util.Map;
+
+/**
+ * 
+ *
+ * @author JunweiZhang
+ * @email zhangjw248@gmail.com
+ * @date 2021-05-28 03:48:12
+ */
+public interface PurchaseDetailService extends IService<PurchaseDetailEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
